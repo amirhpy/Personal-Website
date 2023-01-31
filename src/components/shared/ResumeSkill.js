@@ -1,6 +1,6 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 
-const ResumeSkill = ({icon, classNames, text, data}) => {
+const ResumeSkill = ({ icon, classNames, text, data }) => {
 
     const liRef = useRef(null)
 
@@ -10,7 +10,7 @@ const ResumeSkill = ({icon, classNames, text, data}) => {
 
         liRef.current.classList.add('resume__list-item--active')
         let contentId = liRef.current.getAttribute('data-content-id')
-        
+
         document.querySelector(contentId).classList.add('resume__content--show')
     }
 
