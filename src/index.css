@@ -573,6 +573,7 @@ body {
 /* .portfolio {} */
 
 .portfolio__list {
+    margin-bottom: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -593,7 +594,16 @@ body {
 }
 
 .portfolio__content {
-    margin-top: 6rem;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 120ms ease-in;
+}
+
+.portfolio__content--show {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
 }
 
 .portfolio__content-img {

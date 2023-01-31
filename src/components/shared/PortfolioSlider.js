@@ -10,14 +10,9 @@ import { Pagination } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-// Import Pictures
-import portFolioOne from '../../assets/images/portfolio-1.jpg'
-import portFolioTwo from '../../assets/images/portfolio-2.jpg'
-import portFolioThree from '../../assets/images/portfolio-3.jpg'
-
-const PortfolioSlider = () => {
+const PortfolioSlider = ({ img, className, customId }) => {
     return (
-        <div className='portfolio__content'>
+        <div className={className} id={customId}>
             <Swiper
                 // Install Swiper Modules
                 modules={[Pagination]}
@@ -41,10 +36,10 @@ const PortfolioSlider = () => {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}>
 
-                <SwiperSlide><img className='portfolio__content-img' src={portFolioOne} alt='banner' /></SwiperSlide>
-                <SwiperSlide><img className='portfolio__content-img' src={portFolioTwo} alt='banner' /></SwiperSlide>
-                <SwiperSlide><img className='portfolio__content-img' src={portFolioThree} alt='banner' /></SwiperSlide>
-                <SwiperSlide><img className='portfolio__content-img' src={portFolioThree} alt='banner' /></SwiperSlide>
+                <SwiperSlide><img className='portfolio__content-img' src={img[0]} alt='banner' /></SwiperSlide>
+                <SwiperSlide><img className='portfolio__content-img' src={img[1]} alt='banner' /></SwiperSlide>
+                <SwiperSlide><img className='portfolio__content-img' src={img[2]} alt='banner' /></SwiperSlide>
+                <SwiperSlide><img className='portfolio__content-img' src={img[3]} alt='banner' /></SwiperSlide>
             </Swiper>
         </div>
     );
