@@ -5,8 +5,11 @@ const PortfolioList = ({ name, className, dataContentId }) => {
     const liRef = useRef(null)
 
     const classHandler = () => {
-        document.querySelector('.portfolio__list-item--active').classList.remove('portfolio__list-item--active')
-        document.querySelector('.portfolio__content--show').classList.remove('portfolio__content--show')
+        let portFolioListItem = document.querySelector('.portfolio__list-item--active')
+        portFolioListItem.classList.remove('portfolio__list-item--active')
+
+        let portFolioContent = document.querySelector('.portfolio__content--show')
+        portFolioContent.classList.remove('portfolio__content--show')
 
         liRef.current.classList.add('portfolio__list-item--active')
         let contentId = liRef.current.getAttribute('data-content-id')

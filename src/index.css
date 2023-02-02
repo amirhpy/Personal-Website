@@ -810,6 +810,7 @@ body {
 
 .footer__socials {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -1021,6 +1022,10 @@ body {
 
     .about__link-wrapper {
         justify-content: center;
+    }
+
+    .resume, .pricing {
+        padding: 5rem 0;
     }
 
     .footer__wrapper {

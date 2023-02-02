@@ -1,12 +1,14 @@
 import React, { useRef } from 'react';
 
 const ResumeSkill = ({ icon, classNames, text, data }) => {
-
     const liRef = useRef(null)
 
     const classHandler = () => {
-        document.querySelector('.resume__list-item--active').classList.remove('resume__list-item--active')
-        document.querySelector('.resume__content--show').classList.remove('resume__content--show')
+        let resumeListItem = document.querySelector('.resume__list-item--active')
+        resumeListItem.classList.remove('resume__list-item--active')
+
+        let resumeContent = document.querySelector('.resume__content--show')
+        resumeContent.classList.remove('resume__content--show')
 
         liRef.current.classList.add('resume__list-item--active')
         let contentId = liRef.current.getAttribute('data-content-id')
