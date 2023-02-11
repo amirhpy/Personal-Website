@@ -13,7 +13,7 @@ import uxDesign from '../../assets/svg/uxdesign-svg.svg'
 import webDesign from '../../assets/svg/webdesign-svg.svg'
 
 const Services = () => {
-    const [content, setContent] = useState([
+    const [content] = useState([
         {id: 1, icon: webDesign, shapeColor: '#803AFB', bgColor: '#8540FF', title:'Web Design', caption: 'Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.'},
         {id: 2, icon: interFace, shapeColor: '#FFBB01', bgColor: '#FFC50C', title:'Interface Design', caption: 'Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.'},
         {id: 3, icon: development, shapeColor: '#F5276C', bgColor: '#EC407A', title:'Web Development', caption: 'Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.'},

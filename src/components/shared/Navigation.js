@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import NavMenuLi from './NavMenuLi';
 
 const Navigation = ({menuOpen}) => {
-    const [menuOption, setMenuOption] = useState([
+    const [menuOption] = useState([
         {id: 1, classLI: 'menu__item menu__item-active', dataSection: 'home', classLink: 'menu__link', innerLink: 'Home'},
         {id: 2, classLI: 'menu__item', dataSection: 'aboutus', classLink: 'menu__link', innerLink: 'About us'},
         {id: 3, classLI: 'menu__item', dataSection: 'resume', classLink: 'menu__link', innerLink: 'Resume'},

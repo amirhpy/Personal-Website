@@ -13,7 +13,7 @@ import mapGallery from '../../assets/svg/mapgallery-icon.svg'
 import userGraduate from '../../assets/svg/usergraduate-icon.svg'
 
 const Resume = () => {
-    const [skill, setSkill] = useState([
+    const [skill] = useState([
         { id: 1, icon: userGraduate, text: 'Education', classNames: 'resume__list-item resume__list-item--active', data: '#education' },
         { id: 2, icon: history, text: 'Work History', classNames: 'resume__list-item', data: '#work-history' },
         { id: 3, icon: lapTopCode, text: 'Programming Skill', classNames: 'resume__list-item', data: '#programming-skill' },
@@ -21,13 +21,13 @@ const Resume = () => {
         { id: 5, icon: chartBar, text: 'SEO Skills', classNames: 'resume__list-item', data: '#seo-skills' }
     ])
 
-    const [resumeContent, setResumeContent] = useState([
+    const [resumeContent] = useState([
         { id: 1, title: 'Envato University', date: '2010-2014', subtitle: 'B.sc in Computer Engineer', description: 'Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.' },
         { id: 2, title: 'Envato University', date: '2010-2014', subtitle: 'B.sc in Computer Engineer', description: 'Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.' },
         { id: 3, title: 'Envato University', date: '2010-2014', subtitle: 'B.sc in Computer Engineer', description: 'Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.' },
     ])
 
-    const [resumeContentProgramming, setResumeContentProgramming] = useState([
+    const [resumeContentProgramming] = useState([
         { id: 1, title: 'React', date: '60%', subtitle: 'B.sc in Computer Engineer', description: 'Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.' },
         { id: 2, title: 'JavaScript', date: '70%', subtitle: 'B.sc in Computer Engineer', description: 'Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.' },
         { id: 3, title: 'Html, CSS', date: '90%', subtitle: 'B.sc in Computer Engineer', description: 'Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.' },
